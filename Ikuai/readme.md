@@ -4,4 +4,4 @@ An unauthorized command injection vulnerability exists in the ActionLogin functi
 ![image](image/14.png)
 
 The shell reverse attack is as below.
-![image](image/15.png)
+![image](image/16.png)
