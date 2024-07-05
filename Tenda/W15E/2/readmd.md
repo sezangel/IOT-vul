@@ -3,7 +3,7 @@
 Vendor: Tenda W15E  
 Version: US_W15EV1.0br_V15.11.0.7(752_816)_CN_TDC
 
-Description：There is a buff overflow vulnerability in W15E router. The function is 0x0007D064. IndexSet gets the content of portMappingIndex and uses the strcpy without check the length, which result in buffer overflow.
+Description：There is a buff overflow vulnerability in W15E router. The function is 0x0007D064. pPortMapIndex gets the content of portMappingIndex and uses the strcpy without check the length, which result in buffer overflow.
 
 The static analysis is as follows:
 ![image](image/2.png)
