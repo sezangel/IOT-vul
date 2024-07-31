@@ -34,5 +34,6 @@ data1 =enable=true&remotetype=test&remoteWan=0000&remotePort=1000&remoteIP=%s'%p
 ret = requests.post(url = url ,headers = header,data = data1, verify=False)
 ```
 
+![4037c1d83179189e70ce67660f70f17](https://github.com/user-attachments/assets/270cb2cc-c04d-4100-988b-80cdff1ca6a0)
 
 
