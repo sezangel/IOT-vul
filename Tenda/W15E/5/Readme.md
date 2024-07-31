@@ -32,5 +32,6 @@ data1 ='portMappingIndex=%s'%payload
 ret = requests.post(url = url ,headers = header,data = data1, verify=False)
 ```
 
+![4037c1d83179189e70ce67660f70f17](https://github.com/user-attachments/assets/00bdcca0-e3a2-4063-84b8-dc7f8a10d59b)
 
 
