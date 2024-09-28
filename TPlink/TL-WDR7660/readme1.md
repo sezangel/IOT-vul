@@ -30,4 +30,5 @@ response = requests.post(url, headers=headers, json=data)
 # Output response content
 print(response.text)
 ```
+**The following figure shows the result**
 ![image](https://github.com/sezangel/IOT-vul/tree/main/TPlink/TL-WDR7660/image/2.png)
