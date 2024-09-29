@@ -35,3 +35,4 @@ print(response.text)
 ***(1)Before the above code is executed, the infinite timing switch operates normally, as shown in the following figure***
 ![image](image/2.png)
 ***(2)After executing the above code, the wireless timing switch crashes and the rule for adding the timing switch disappears***
+![image](image/3.png)
