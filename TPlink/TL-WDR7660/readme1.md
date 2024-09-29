@@ -31,4 +31,5 @@ response = requests.post(url, headers=headers, json=data)
 print(response.text)
 ```
 **The following figure shows the result**
+
 ![image](image/2.png)
