@@ -3,7 +3,7 @@
 
 The wlanTimerRuleJsonToBin function handles the important parameter string name without checking it. It can lead to stack overflow vulnerabilities.
 
-![image](../image/1.png)
+![image](image/1.png)
 
 **Exploit a vulnerability in the wlanTimerRuleJsonToBin function by sending a carefully constructed HTTP request**
 ```
@@ -32,4 +32,6 @@ print(response.text)
 ```
 **The following figure shows the result**
 
-![image](../image/2.png)
+***(1)Before the above code is executed, the infinite timing switch operates normally, as shown in the following figure***
+![image](image/2.png)
+***(2)After executing the above code, the wireless timing switch crashes and the rule for adding the timing switch disappears***
