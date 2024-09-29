@@ -1,9 +1,10 @@
 **A stack overflow vulnerability exists in TL-WDR7660**
+
 **version:  TL-WDR7660 ver1.0**
 
 The wacWhitelistJsonToBin function handles the important parameter string name without checking it. It can lead to stack overflow vulnerabilities.
 
-![image](../image/1.png)
+![image](image/1.png)
 
 **Exploit a vulnerability in the wacWhitelistJsonToBin function by sending a carefully constructed HTTP request**
 ```
@@ -32,5 +33,10 @@ print(response.text)
 ```
 **The following figure shows the result**
 
-![image](../image/2.png)
+***(1)Before the above code is executed, the wireless device access control works normally, as shown in the figure below***
 
+![image](image/2.png)
+
+***（2）After running the above code, the server crashes directly, unable to connect wirelessly to the router, and unable to log in to the router's administrative page***
+
+![image](image/3.png)
