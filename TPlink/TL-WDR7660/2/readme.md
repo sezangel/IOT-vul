@@ -1,4 +1,5 @@
 **A stack overflow vulnerability exists in TL-WDR7660 version: TL-WDR7660 ver1.0**
+
 The guestRuleJsonToBin function handles the important parameter string name without checking it. It can lead to stack overflow vulnerabilities.
 
 ![image](image/1.png)
