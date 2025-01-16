@@ -9,3 +9,4 @@ Detail: There is a command injection vulnerability in apcli_cancel_wps function 
 
 We use Burpsuite to attack, the effect is as follows.
 ![image](../image/apcli_cancel_wps-3.png)
+![image](../image/wget_response.png)
