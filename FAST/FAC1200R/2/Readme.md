@@ -1,6 +1,6 @@
 Submittion Date: 2025.4.18  
 Vendor: FAC1200R  
-Firmware: F400_FAC1200R_Q
+Firmware: F400_FAC1200R_Q  
 Download Link: https://service.fastcom.com.cn/download-265.html
 
 The function sub_80435780 handles the important parameter string 'fac_password' without checking it, which leads to a buffer overflow vulnerability. After attacking, the device will crash (leading to DOS).
