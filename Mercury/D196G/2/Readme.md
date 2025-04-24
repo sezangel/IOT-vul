@@ -34,4 +34,5 @@ print(response.text)
 ```
 
 The exploitation is shown below.  
+![image](image/mercury-1.png)
 ![image](image/mercury-2.png)
