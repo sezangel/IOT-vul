@@ -1,7 +1,7 @@
 Submittion Date: 2025.4.18  
-Vendor: D196G
-Firmware: d196gv1-cn-up_2020-01-09_11.21.44  
-Download Link: https://service.fastcom.com.cn/download-265.html
+Vendor: D196G  
+Firmware: d196gv1-cn-up_2020-01-09_11.21.44   
+Download Link: https://service.fastcom.com.cn/download-265.html  
 
 The function sub_404CAEDC handles the important parameter string 'fac_password' without checking it, which leads to a buffer overflow vulnerability. After attacking, the device will crash (leading to DOS).
 
