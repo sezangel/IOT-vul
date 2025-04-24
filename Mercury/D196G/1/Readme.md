@@ -1,5 +1,5 @@
 Submittion Date: 2025.4.18  
-Vendor: D196G
+Vendor: D196G  
 Firmware: d196gv1-cn-up_2020-01-09_11.21.44  
 Download Link: https://service.fastcom.com.cn/download-265.html
 
