@@ -33,5 +33,5 @@ response = requests.post(url, headers=headers, json=data)
 print(response.text)
 ```
 
-The exploitation is shown below.
+The exploitation is shown below.  
 ![image](image/tplink-1.png)
