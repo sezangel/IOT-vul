@@ -1,5 +1,5 @@
 Submittion Date: 2025.4.18  
-Vendor: FAC1200R
+Vendor: FAC1200R  
 Firmware: F400_FAC1200R_Q
 Download Link: https://service.fastcom.com.cn/download-265.html
 
