@@ -1,7 +1,7 @@
-Submittion Date: 2025.4.18
-Vendor: GL-AR300M16.4.3.11
-Firmware: openwrt-ax1800-4.5.16-0321-1711030388
-Download Link: https://dl.gl-inet.cn/router/ar300m16/stable
+Submittion Date: 2025.4.18  
+Vendor: GL-AR300M16.4.3.11  
+Firmware: openwrt-ax1800-4.5.16-0321-1711030388  
+Download Link: https://dl.gl-inet.cn/router/ar300m16/stable  
 
 The function `remove_package`handles the critical parameter string `name`without proper sanitization or validation, which leads to a **command injection vulnerability**. Similar to `get_package_info`, this function constructs system commands using unsanitized user input, allowing attackers to execute arbitrary commands with elevated privileges.
 <img width="2077" height="876" alt="微信图片_20251125155501_216_100" src="https://github.com/user-attachments/assets/c4cff653-f86f-4630-9d8f-169b5a414172" />
