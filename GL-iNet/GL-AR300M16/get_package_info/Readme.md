@@ -5,7 +5,7 @@ Download Link: https://dl.gl-inet.cn/router/ar300m16/stable
 
 The function `get_package_info` handles the critical parameter string `name`without proper sanitization or validation, which leads to a **command injection vulnerability**. By injecting malicious shell metacharacters into the `name`field, an attacker can execute arbitrary system commands with the privileges of the web server process (often root). This can result in full system compromise, including unauthorized access, data theft, or persistent backdoor installation.
 
-<img width="1704" height="594" alt="plugins so-getpackegeinfo" src="https://github.com/user-attachments/assets/c3cc1df8-1ee5-4a6f-a8d0-26f7e6f94d6b" />
+![image](image/mips-vul.png)
 
 
 Exploit the vulnerability by sending a carefully constructed HTTP request
