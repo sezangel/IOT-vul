@@ -3,10 +3,12 @@ Vendor: GL-AR300M16.4.3.11
 Firmware: openwrt-ax1800-4.5.16-0321-1711030388  
 Download Link: https://dl.gl-inet.cn/router/ar300m16/stable  
 
-The function `get_package_info` handles the critical parameter string `name`without proper sanitization or validation, which leads to a **command injection vulnerability**. By injecting malicious shell metacharacters into the `name`field, an attacker can execute arbitrary system commands with the privileges of the web server process (often root). This can result in full system compromise, including unauthorized access, data theft, or persistent backdoor installation.
+The function `get_package_info` handles the critical parameter string `name`without proper sanitization or validation, which leads to a **command injection vulnerability**. By injecting malicious shell metacharacters into the `name`field, an attacker can execute arbitrary system commands with the privileges of the web server process (often root). This can result in full system compromise, including unauthorized access, data theft, or persistent backdoor installation. 
 
 ![image](image/mips-vul.png)
 
+The vendor modified the format string to enhance security, but command injection can still be achieved by means of a bypass.
+![image](image/format_string.png)
 
 Exploit the vulnerability by sending a carefully constructed HTTP request
 
