@@ -18,7 +18,7 @@ Shell parses and executes (command injection)
     ↓
 Arbitrary command execution with root privileges
 
-![image](image/mips-vul.png)
+![image](image/mips-vul1.png)
 The vendor modified the format string to enhance security, but command injection can still be achieved by means of a bypass.
 ![image](image/format_string1.png)
 ![image](image/format_string2.png)
