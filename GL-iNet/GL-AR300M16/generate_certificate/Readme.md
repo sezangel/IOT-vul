@@ -36,7 +36,7 @@ data = {
     "jsonrpc": "2.0",
     "method": "call",
      "params": [
-        "LhYe29M1b07gEYD6M7r0GEhEdf7ZKwf",
+        "wb1H7fURGJM4dMpIsTQDZM50GNfgmqGd",
         "ovpn-server",  
         "generate certificate",
         {
