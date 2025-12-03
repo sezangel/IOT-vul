@@ -54,7 +54,7 @@ try:
         url,
         headers=headers,
         json=data,
-        verify=False  # 忽略SSL证书验证
+        verify=False 
     )
     
     # 输出响应信息
