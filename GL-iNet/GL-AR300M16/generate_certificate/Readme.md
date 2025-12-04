@@ -4,7 +4,7 @@ Version: 4.3.27
 Firmware: openwrt-ar300m16-4.3.27-0514-1747192506  
 Download Link: https://dl.gl-inet.cn/router/ar300m16/stable  
 
-The function generate_certificate handles critical OpenSSL certificate generation operations through unsafe command construction and execution, which leads to a command injection vulnerability. 
+There are two command injection vulnerabilities in generate_certificate function. The function generate_certificate handles critical OpenSSL certificate generation operations through unsafe command construction and execution, which leads to a command injection vulnerability. 
 The function uses sprintf-style format strings to build shell commands with user-controlled input, then executes them via system calls without proper sanitization.
 
 ![image](image/mips-vuln.png)
