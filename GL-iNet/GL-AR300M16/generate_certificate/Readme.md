@@ -8,6 +8,8 @@ The function generate_certificate handles critical OpenSSL certificate generatio
 The function uses sprintf-style format strings to build shell commands with user-controlled input, then executes them via system calls without proper sanitization.
 
 ![image](image/mips-vuln.png)
+![image](image/dh_vuln.png)
+
 Exploit the vulnerability by sending a carefully constructed HTTP request
 
 ```
@@ -65,7 +67,9 @@ except requests.exceptions.RequestException as e:
     print(f"Request failed: {e}")
 ```
 
-The exploitation is shown below.
+The exploitation is shown below.（ch）
 ![image](image/generate_certificate-exloit.png)
 
+The exploitation is shown below.（dh）
 
+![image](image/dh_exploit.png)
