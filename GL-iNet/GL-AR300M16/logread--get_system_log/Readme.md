@@ -16,7 +16,7 @@ arbitrary commands with root privileges.
 cmd = string.format("logread -e \"%s\" | tail -n %d", module, lines)
 cmd = string.format("logread -e \"%s\"", module)
 
-![image](image/lua_vuln.png)
+![image](image/vulnlog.png)
 Exploit the vulnerability by sending a carefully constructed HTTP request
 
 ```
