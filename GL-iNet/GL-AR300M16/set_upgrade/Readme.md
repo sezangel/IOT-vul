@@ -1,7 +1,8 @@
 Submittion Date: 2025.11.26
 Vendor: GL-AR300M16  
-Version: 4.3.27   
-Firmware: openwrt-ar300m16-4.3.27-0514-1747192506  
+Version: 4.3.11   
+Firmware: openwrt-ar300m16-4.3.27-0514-1747192506.bin
+
 Download Link: https://dl.gl-inet.cn/router/ar300m16/stable  
 
 The function set_upgrade handles multiple critical parameter strings (modem_url, target_version, current_version, firmware_upload, hash_type, hash_value, upgrade_type) without proper sanitization or validation, which leads to a command injection vulnerability. By injecting malicious shell metacharacters into these parameters, an attacker can execute arbitrary system commands with root privileges. This can result in full system compromise, including unauthorized access, data theft, or persistent backdoor installation.
