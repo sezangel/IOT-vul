@@ -1,7 +1,8 @@
 Submission Date:​ 2025.4.18
 Vendor:​ GL-AR300M16
-Version:​ 4.3.27
-Firmware:​ openwrt-ar300m16-4.3.27-0514-1747192506
+Version: 4.3.11   
+Firmware: openwrt-ar300m16-4.3.27-0514-1747192506.bin
+
 Download Link:​ https://dl.gl-inet.cn/router/ar300m16/stable
 
 The set_configfunction handles WireGuard server private key parameters by directly concatenating user-controlled private_keyinput into system commands without any sanitization or validation, leading to a command injection vulnerability.
