@@ -1,7 +1,7 @@
 Submittion Date: 2025.4.18  
 Vendor: GL-AR300M16  
-Version: 4.3.11
-Firmware: openwrt-ar300m16-4.3.27-0514-1747192506  
+Version: 4.3.11   
+Firmware: openwrt-ar300m16-4.3.27-0514-1747192506.bin
 Download Link: https://dl.gl-inet.cn/router/ar300m16/stable  
 
 There are two command injection vulnerabilities in generate_certificate function. The function generate_certificate handles critical OpenSSL certificate generation operations through unsafe command construction and execution, which leads to a command injection vulnerability. 
