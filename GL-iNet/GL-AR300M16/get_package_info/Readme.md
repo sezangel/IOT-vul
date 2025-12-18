@@ -1,7 +1,8 @@
 Submittion Date: 2025.4.18  
 Vendor: GL-AR300M16  
-Version: 4.3.27   
-Firmware: openwrt-ar300m16-4.3.27-0514-1747192506  
+Version: 4.3.11   
+Firmware: openwrt-ar300m16-4.3.27-0514-1747192506.bin
+
 Download Link: https://dl.gl-inet.cn/router/ar300m16/stable  
 
 The function `get_package_info` handles the critical parameter string `name`without proper sanitization or validation, which leads to a **command injection vulnerability**. By injecting malicious shell metacharacters into the `name`field, an attacker can execute arbitrary system commands with the privileges of the web server process (often root). This can result in full system compromise, including unauthorized access, data theft, or persistent backdoor installation. 
