@@ -1,6 +1,6 @@
-Submission Date:​ 2025.4.18
-Vendor:​ GL-AR300M16
-Version: 4.3.11   
+Submission Date:​ 2025.4.18  
+Vendor:​ GL-AR300M16  
+Version: 4.3.11    
 Firmware:openwrt-ar300m16-4.3.11-0320-1710939596
 
 Download Link:​ https://dl.gl-inet.cn/router/ar300m16/stable
