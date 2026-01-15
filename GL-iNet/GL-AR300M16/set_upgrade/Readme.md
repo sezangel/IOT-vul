@@ -1,4 +1,4 @@
-Submittion Date: 2025.11.26
+Submittion Date: 2025.11.26  
 Vendor: GL-AR300M16  
 Version: 4.3.11   
 Firmware: openwrt-ar300m16-4.3.11-0320-1710939596
