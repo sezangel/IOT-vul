@@ -9,7 +9,7 @@ In /usr/lib/lua/luci/controller/admin/telephony.lua, the function ```action_dial
 ![image](../image/action_dial_call-2.png)
 
 The potentially attacking vector is as follows:  
-```
+```py
 import requests
 
 TARGET_URL = "http://192.168.1.1/cgi-bin/luci/admin/telephony/trigger_call_dial_constant"
