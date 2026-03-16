@@ -10,7 +10,7 @@ which leads to a command injection vulnerability.
 ![image](../image/action_ims_on_with_apn-2.png)
 
 The potentially attacking vector is as follows:  
-```
+```py
 import requests
 import urllib.parse
 
