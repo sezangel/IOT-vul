@@ -5,6 +5,8 @@ Download Link: https://www.downloads.netgear.com/files/GDC/EX6250/EX7300v2_EX640
 
 In /usr/lib/lua/luci/controller/admin/status.lua, the function ```action_bandwidth``` handles the important parameter string ```iface``` without checking it, which leads to a command injection vulnerability.
 
+![image](../image/action_bandwidth-1.png)
+![image](../image/action_bandwidth-2.png)
 
 The potentially attacking vector is as follows:  
 ```py
@@ -29,3 +31,6 @@ try:
 except Exception as e:
     print(f"[-] Error: {e}")
 ```
+
+The attacking result is as follows:
+![image](../image/ex6250-attack-1.png)
